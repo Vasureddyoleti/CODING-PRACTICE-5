@@ -65,7 +65,7 @@ app.put("/movies/:movieId/", async (request, response) => {
   const { movieId } = request.params;
   const movieDetails = request.body;
   const { directorId, movieName, leadActor } = movieDetails;
-  const updateMovieQuery = `UPADTE movie
+  const updateMovieQuery = `UPDATE movie
   SET
    director_id=${directorId},
    movie_name='${movieName}',
